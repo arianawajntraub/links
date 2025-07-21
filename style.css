@@ -1,0 +1,127 @@
+:root {
+    --bg-color: #212121; /* Gris oscuro casi negro */
+    --primary-neon: #FF005C; /* Fucsia/Rosa potente */
+    --secondary-neon: #FF8AB2; /* Rosa salmón pálido */
+    --text-color: #F5F5DC; /* Crema/Beige pálido */
+    --text-color-muted: rgba(245, 245, 220, 0.6); /* Crema con opacidad */
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--bg-color);
+    /* Textura sutil de fondo */
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><g fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.02"><path opacity=".5" d="M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9z"/></g></g></svg>');
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 680px;
+    width: 100%;
+    text-align: center;
+}
+
+.profile-header .logo {
+    width: 100px;
+    margin: 0 auto 15px auto;
+    filter: drop-shadow(0 0 10px var(--primary-neon));
+    transition: filter 0.3s ease;
+}
+
+.profile-header .logo:hover {
+    filter: drop-shadow(0 0 15px var(--secondary-neon));
+}
+
+.profile-header h1 {
+    font-size: 2em;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.social-icons a {
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--primary-neon);
+    transform: scale(1.1);
+}
+
+.social-icons svg {
+    width: 28px;
+    height: 28px;
+}
+
+.links-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.link-button {
+    background-color: transparent;
+    color: var(--text-color);
+    border: 2px solid var(--text-color-muted);
+    padding: 18px 25px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: 50px; /* Bordes redondeados */
+    transition: all 0.3s ease;
+    box-shadow: 0 0 0px var(--primary-neon);
+}
+
+.link-button:hover {
+    background-color: rgba(255, 0, 92, 0.1); /* Fondo sutil al pasar el mouse */
+    border-color: var(--primary-neon);
+    color: var(--text-color);
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px var(--primary-neon); /* Efecto neón al borde */
+}
+
+.main-footer {
+    margin-top: 50px;
+    color: var(--text-color-muted);
+}
+
+.main-footer p {
+    margin: 0 0 10px 0;
+    font-weight: 600;
+}
+
+.main-footer a {
+    color: var(--text-color-muted);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.main-footer a:hover {
+    color: var(--secondary-neon);
+}
+
+.footer-links {
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+
+.footer-links a {
+    margin: 0 10px;
+}
+
+.footer-links span {
+    color: var(--text-color-muted);
+}

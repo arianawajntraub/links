@@ -86,11 +86,12 @@ body {
 }
 
 .link-button:hover {
-    background-color: rgba(255, 0, 92, 0.1); /* Fondo sutil al pasar el mouse */
+    background-color: rgba(255, 0, 92, 0.1);
     border-color: var(--primary-neon);
     color: var(--text-color);
-    transform: translateY(-2px);
-    box-shadow: 0 0 15px var(--primary-neon); /* Efecto neón al borde */
+    transform: translateY(-3px); /* Lo 'levanta' un poquito más para que sea más notable */
+    box-shadow: 0 4px 25px -5px var(--primary-neon); /* Refina el brillo para que sea más profundo */
+    text-shadow: 0 0 8px rgba(245, 245, 220, 0.3); /* NUEVO: Añade un sutil brillo al propio texto */
 }
 
 .main-footer {
